@@ -1,0 +1,91 @@
+@tailwind components;
+
+.menu{
+    @apply
+    bg-slate-200
+    dark:bg-backgroundSecondaryColor-inverted
+    h-14
+}
+
+.nav-bar{
+    @apply
+    flex self-center ml-24 -mt-8
+}
+
+.logo{
+    @apply
+    flex
+    pt-4 pl-6
+}
+
+.nav-icon{
+    @apply
+    mr-6
+}
+
+.nav-avatar{
+    @apply
+    w-7 h-7 rounded-full 
+    mt-1 mr-3 ml-2
+    text-xs justify-center
+    border-2 border-neutral-800 hover:border-white
+    text-slate-200 hover:text-white
+    bg-gradient-to-b from-sky-200 to-sky-800    
+}
+
+.nav-avatar-initial{
+    @apply
+    text-base -mt-0.5
+    font-bold
+    flex justify-center
+}
+
+.logout-Button{
+    @apply
+    text-neutral-800 text-sm
+    dark:text-neutral-400
+    hover:text-red-800 hover:font-bold 
+}
+
+@media only screen and (min-width: 500px) {
+    .menu {
+        @apply
+        w-20 h-auto
+        m-4
+        rounded-2xl
+        fixed
+    }
+
+    .nav-bar{
+        @apply
+        grid grid-cols-1
+        ml-8 mt-4
+    }
+
+    .nav-icon{
+        @apply
+        mt-8
+    }
+
+    .logo{
+        @apply
+        flex
+        pt-6 pl-6
+    }
+
+    .nav-avatar{
+        @apply
+        w-10 h-10 
+        -ml-3 mt-36 mb-4
+    }
+    
+    .nav-avatar-initial{
+        @apply
+        text-lg mt-1
+    }
+
+    .logout-Button{
+        @apply
+        -ml-7 mb-4
+    }
+}

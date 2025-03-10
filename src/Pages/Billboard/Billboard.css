@@ -1,0 +1,109 @@
+@tailwind components;
+
+.container{
+    @apply
+    pl-4 pr-8
+}
+
+.recommended-title{
+    @apply
+    font-semibold
+    text-backgroundColor-inverted
+    dark:text-backgroundColor-normal
+    text-xl mb-2 pt-2
+}
+
+.recommended-display{
+    @apply grid grid-cols-2
+    w-full
+}
+
+.item-recommended{
+    @apply
+    text-backgroundColor-inverted
+    dark:text-backgroundColor-normal
+    w-40 h-44
+}
+
+.item-details{
+    @apply
+    text-xs mt-1
+    flex
+}
+
+.item-title{
+    @apply
+    text-h1Color-normal dark:text-h1Color-inverted 
+    text-base font-semibold
+}
+
+.icon-bookmark-item{
+    @apply
+    bg-backgroundColor-inverted
+    rounded-full 
+    opacity-80 w-7 h-7 
+    absolute top-1 right-2  pl-2 
+}
+
+.edit-item-recommended{
+    @apply
+    bg-backgroundColor-inverted rounded-full 
+    opacity-80 w-7 h-7 pl-2
+}
+
+.close-modal-button{
+    @apply
+    rounded-lg bg-white absolute top-5 right-16 w-7 h-7
+}
+
+@media only screen and (min-width: 650px) {
+    .recommended-display{
+        @apply grid
+        grid-cols-3
+    }
+
+    .item-recommended{
+        @apply
+        mr-2
+    }
+
+    .close-modal-button{
+        @apply
+        rounded-lg bg-white absolute top-5 right-24 w-7 h-7
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .recommended-display{
+        @apply grid
+        grid-cols-4
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .recommended-display{
+        @apply grid 
+        grid-cols-5
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .recommended-display{
+        @apply grid 
+        grid-cols-6
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .recommended-display{
+        @apply grid 
+        grid-cols-7
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .recommended-display{
+        @apply grid 
+        grid-cols-8
+    }
+}

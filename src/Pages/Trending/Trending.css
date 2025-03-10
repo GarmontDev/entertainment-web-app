@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item-trending-container{
+    @apply
+    text-h1Color-inverted
+    w-screen
+    h-40
+}
+
+.item-trending-title{
+    @apply
+    absolute bottom-2 left-4
+    text-h1Color-inverted
+    text-lg
+}
+
+.item-trending-info{
+    @apply
+    text-xs text-textColor-normal
+    absolute bottom-8 left-4
+}
+
+.item-trending-rating{
+    @apply
+    text-white text-opacity-70 font-medium flex justify-center
+    bg-white bg-opacity-40 rounded-full w-8 h-6 
+    absolute bottom-3 left-52
+}
+
+.item-trending-image{
+    @apply
+    rounded-lg
+    object-cover
+    w-full
+    h-full
+}
+
+.icon-bookmark-trending{
+    @apply
+    bg-black rounded-full 
+    opacity-80 w-7 h-7 relative top-4 left-52 pl-2
+}
+
+@media only screen and (min-width: 600px) {
+    .item-trending-container{
+        @apply
+        w-64
+        h-40
+    }
+
+    .icon-bookmark-trending{
+        @apply
+        absolute top-2 right-32
+    }
+}
